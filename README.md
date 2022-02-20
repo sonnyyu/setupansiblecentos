@@ -11,9 +11,8 @@ all of them has sonnyyu as sudo user .
 
 Install ansible at control machine (192.168.1.10):
 ```sh
-sudo apt-add-repository ppa:ansible/ansible -y
-sudo apt update -y
-sudo apt install ansible -y
+sudo yum install epel-release -y
+sudo yum install ansible -y
 ```
 Create devops user at control machine
 ```sh
