@@ -8,6 +8,10 @@ Made 3 Centos 8 machines ready
 Use 192.168.1.10 as control machine, others for nodes
 
 all of them has sonnyyu as sudo user .
+```sh
+su 
+usermod -aG wheel sonnyyu
+```
 
 Install ansible at control machine (192.168.1.10):
 ```sh
