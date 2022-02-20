@@ -61,7 +61,7 @@ Test Ad-hoc
 ansible all -m ping
 ansible all -a "df -h" 
 ansible all -a "free -h"
-ansible all -m apt -a "name=tree state=latest" -b
+ansible all -m yum -a "name=tree state=latest" -b
 ansible all -a "uptime"
 ```
 
