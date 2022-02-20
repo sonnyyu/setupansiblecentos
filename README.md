@@ -5,11 +5,11 @@ Made 3 Centos 8 machines ready
 192.168.1.11
 192.168.1.12
 ```
-Use 192.168.1.1 as control machine, others for nodes
+Use 192.168.1.10 as control machine, others for nodes
 
 all of them has sonnyyu as sudo user .
 
-Install ansible at control machine (192.168.1.1):
+Install ansible at control machine (192.168.1.10):
 ```sh
 sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt update -y
@@ -36,8 +36,8 @@ cd setupansibleubuntu
 Edit hosts-dev with IP address
 ```sh
 [webservers]
-app1 ansible_host=192.168.1.2
-app2 ansible_host=192.168.1.3
+app1 ansible_host=192.168.1.11
+app2 ansible_host=192.168.1.12
 ```
 Run Playbook to create password less login at nodes
 ```sh
