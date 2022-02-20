@@ -17,8 +17,10 @@ sudo apt install ansible -y
 ```
 Create devops user at control machine
 ```sh
+sudo userdel -r devops
 sudo adduser devops
-sudo usermod -aG sudo devops
+sudo passwd devops
+sudo usermod -aG wheel devops
 su devops
 cd ~
 ssh-keygen
