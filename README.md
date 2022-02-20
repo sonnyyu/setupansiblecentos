@@ -31,7 +31,7 @@ devops
 ```
 Clone github
 ```sh
-git clone https://github.com/sonnyyu/setupansibleubuntu
+git clone https://github.com/sonnyyu/setupansiblecentos
 cd setupansibleubuntu
 ```
 Edit hosts-dev with IP address
